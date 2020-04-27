@@ -19,20 +19,23 @@ const winningArrays = [
 [29, 30, 31, 32], [33, 32, 31, 30], [36, 37, 38, 39], [40, 39, 38, 37],
 [7, 14, 21, 28],[8, 15, 22, 29], [9, 16, 23, 30], [10, 17, 24, 31],
 [11, 18, 25, 32], [12, 19, 26, 33], [13, 20, 27, 34]];
-
-
+const replay = document.querySelector('.replay');
 let arrayWin = [];
 let circle = document.querySelectorAll('.circle');
 let column = document.querySelectorAll('.column');
 let current = [5,5,5,5,5,5,5];
 let color = 'red';
-
 let array = [];
+let whosTurn = 'yellow'
+let turn = document.querySelector('.turn span');
+
+
 for(let l = 0; l < 42; l++){
 array.push(document.querySelector(`._${l}element`));
 }
-
-console.log(array);
+replay.addEventListener('click', function(){
+    return location.reload();
+  });
 
 for(let i = 0; i < current.length; i++){
 
@@ -72,8 +75,14 @@ for(let i = 0; i < current.length; i++){
   }
 
 }
-
-
-
+  if(whosTurn == 'yellow'){
+    turn.classList.remove('smallyellow');
+    turn.classList.add('smallred');
+    whosTurn = 'red';
+  }else{
+    turn.classList.remove('smallred');
+    turn.classList.add('smallyellow');
+    whosTurn = 'yellow';
+  }
   }
 }

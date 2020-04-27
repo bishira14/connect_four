@@ -13,7 +13,29 @@ body{
   color:white;
   font-family:arial;
 }
-
+.stats{
+  width:45em;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:5px 0;
+}
+.stats h2 {
+  background-color: rgba(0, 0, 102, 0.3);
+  padding:5px;
+  border-radius: 7px;
+}
+.replay{
+  width:40px;
+  text-align: center;
+  background-color: rgb(119, 187, 119);
+  border-radius: 7px;
+  margin-right: 3px;
+  cursor:pointer;
+}
+.turn{
+  width:100px;
+}
 .container{
   background:blue;
   height:40em;
@@ -38,4 +60,23 @@ body{
   border: none;
   border-radius: 50%;
   background-color:rgba(0, 0, 0, 0.3);
+}
+span{
+  height:20px;
+  width:50px;
+  background-Color:yellow;
+}
+.smallyellow{
+  width:40px;
+  height:20px;
+  background-color: yellow;
+  border:solid 1px black;
+  border-radius: 50%;
+}
+.smallred{
+  width:20px;
+  height:20px;
+  background-color: red;
+  border:solid 1px black;
+  border-radius: 50%;
 }
