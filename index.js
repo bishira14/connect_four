@@ -39,6 +39,7 @@ for(let i = 0; i < current.length; i++){
   column[i].addEventListener('click', game);
 
   function game(){
+    if(arrayWin.length === 4) return;
     if(color === 'red'){
       color = 'yellow';
     }else{
@@ -58,10 +59,10 @@ for(let i = 0; i < current.length; i++){
    }
   }
   if(arrayWin.length == 4){
-    array[winningArrays[j][0]].style.border = 'solid 5px green';
-    array[winningArrays[j][1]].style.border = 'solid 5px green';
-    array[winningArrays[j][2]].style.border = 'solid 5px green';
-    array[winningArrays[j][3]].style.border = 'solid 5px green';
+    array[winningArrays[j][0]].style.border = 'solid 4px green';
+    array[winningArrays[j][1]].style.border = 'solid 4px green';
+    array[winningArrays[j][2]].style.border = 'solid 4px green';
+    array[winningArrays[j][3]].style.border = 'solid 4px green';
     column.forEach(element => {
     element.removeEventListener('click', game);
     });
