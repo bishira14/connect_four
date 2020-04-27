@@ -27,7 +27,7 @@ let current = [5,5,5,5,5,5,5];
 let color = 'red';
 let array = [];
 let whosTurn = 'yellow'
-let turn = document.querySelector('.turn span');
+let turn = document.querySelector('.turn div');
 
 
 for(let l = 0; l < 42; l++){
