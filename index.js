@@ -51,7 +51,7 @@ for(let i = 0; i < current.length; i++){
   if(current[i] >= 0){
     column[i].children[current[i]].style.backgroundColor = color;
   }else{
-    console.log('column finished');
+    return console.log('column finished');
   }
   current[i]--;
 
