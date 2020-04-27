@@ -26,9 +26,8 @@ let column = document.querySelectorAll('.column');
 let current = [5,5,5,5,5,5,5];
 let color = 'red';
 let array = [];
-let whosTurn = 'yellow'
+let whosTurn = 'yellow';
 let turn = document.querySelector('.turn span');
-
 
 for(let l = 0; l < 42; l++){
 array.push(document.querySelector(`._${l}element`));
