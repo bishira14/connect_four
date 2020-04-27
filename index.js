@@ -66,9 +66,9 @@ for(let i = 0; i < current.length; i++){
     array[winningArrays[j][1]].style.border = 'solid 4px green';
     array[winningArrays[j][2]].style.border = 'solid 4px green';
     array[winningArrays[j][3]].style.border = 'solid 4px green';
-    column.forEach(element => {
-    element.removeEventListener('click', game);
-    });
+    // column.forEach(element => {
+    // element.removeEventListener('click', game);
+    // });
     return console.log(`${color} won`);
   }else{
     arrayWin = [];
