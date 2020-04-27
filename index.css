@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background:rgb(0, 0, 204);
+  color:white;
+  font-family:arial;
+}
+
+.container{
+  background:blue;
+  height:40em;
+  width:45em;
+  border:none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 7px;
+}
+.column{
+  height:40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.circle{
+  height:90px;
+  width:90px;
+  border: none;
+  border-radius: 50%;
+  background-color:rgba(0, 0, 0, 0.3);
+}
