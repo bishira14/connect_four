@@ -26,7 +26,6 @@ let column = document.querySelectorAll('.column');
 let current = [5,5,5,5,5,5,5];
 let color = 'red';
 let array = [];
-let whosTurn = 'yellow';
 let turn = document.querySelector('.turn span');
 
 for(let l = 0; l < 42; l++){
@@ -74,14 +73,12 @@ for(let i = 0; i < current.length; i++){
   }
 
 }
-  if(whosTurn == 'yellow'){
+  if(color == 'yellow'){
     turn.classList.remove('smallyellow');
     turn.classList.add('smallred');
-    whosTurn = 'red';
   }else{
     turn.classList.remove('smallred');
     turn.classList.add('smallyellow');
-    whosTurn = 'yellow';
   }
   }
 }
