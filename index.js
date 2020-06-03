@@ -37,9 +37,7 @@ replay.addEventListener('click', function(){
 
 for(let i = 0; i < current.length; i++){
 
-  column[i].addEventListener('click', game);
-
-  function game(){
+  column[i].addEventListener('click', function(){
     if(arrayWin.length === 4) return;
     if(color === 'red'){
       color = 'yellow';
@@ -80,5 +78,5 @@ for(let i = 0; i < current.length; i++){
     turn.classList.remove('smallred');
     turn.classList.add('smallyellow');
   }
-  }
+  });
 }
